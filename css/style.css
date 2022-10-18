@@ -10,9 +10,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.6;
 }
-.widescreen {
-  display: none;
-}
 li {
   list-style: none;
 }
@@ -27,9 +24,7 @@ a {
 }
 .logo {
   font-family: 'Montserrat Alternates', sans-serif;
-  /* font-family: 'Montserrat Subrayada', sans-serif; */
   font-size: 2rem;
-  /* color: #FCD450; */
   color: #1E0235;
 }
 .heading {
@@ -43,7 +38,7 @@ a {
 .web-head {
   font-size: 3rem;
   text-align: center;
-  padding-top: 7rem;
+  color: #fff;
 }
 .lead {
   font-size: 20px;
@@ -109,14 +104,11 @@ a {
 #showcase {
   background: yellow;
   color: #333;
-  height: 90vh;
 }
 #showcase .content {
   display: flex;
   justify-content: space-around;
-  height: 90vh;
-  align-items: center;
-  align-self: center;
+  padding-top: 6rem;
 }
 #showcase .content-text {
   justify-content: center;
@@ -130,18 +122,19 @@ a {
 #showcase .content-text ul li {
   margin-right: 1rem;
 }
+/* #showcase .content-text ul li i:hover {
+  font-size: 3rem;
+} */
 #showcase .content-img img {
   width: 550px;
 }
 
 /* About */
 #about {
-  background:#ffff00;
-  /* height: 100vh; */
-  box-shadow: 11px 11px 44px 0px rgb(226 231 6);
+  background: #fff;
+  /* background: rgb(110, 107, 107); */
 }
 #about .about {
-  /* height: 100vh; */
   display: flex;
   grid-gap: 2rem;
   align-items: center;
@@ -154,13 +147,12 @@ a {
 #about .about .about-text  {
   padding: 3rem 4rem;
   border-radius: 10px;
-  background: #ffff24;
-  box-shadow: 11px 11px 44px 0px rgb(226 231 6);
+  background: #fff;
+  box-shadow: 10px 10px #444 ;
 }
 
 /* Skills */
 #skills {
-  /* height: 100vh; */
   background: yellow;
 }
 #skills h2 {
@@ -171,7 +163,6 @@ a {
 #skills .skills-list {
   display: flex;
   justify-content: space-around;
-  margin-top: 10rem;
   text-align: center;
   align-items: center;
 }
@@ -183,7 +174,8 @@ a {
   font-size: 1.5rem;
 }
 .box p {
-  font-size: 20px;
+  font-size: 16px;
+  padding-bottom: 1rem;
 }
 .box img {
   width: 300px;
@@ -191,20 +183,19 @@ a {
 
 /* Works */
 #works {
-  background: #ffff00;
-  /* height: 100vh; */
+  background: black;
 }
 .web img {
-  width: 299px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  width: 300px;
+}
+.box-bk img {
+  width: 350px;
 }
 #works .website {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  /* height: 60vh; */
 }
 .box-y {
   margin-top: 5rem;
@@ -212,10 +203,15 @@ a {
   grid-template-rows: repeat(2,1fr);
   grid-gap: none;
   background: #f4f4f4;
-  border-radius: 20px;
   width: 300px;
   height: 400px;
-  box-shadow: 19px 19px 50px 5px rgb(218, 221, 13);
+  /* box-shadow: 19px 19px 50px 5px rgb(218, 221, 13); */
+}
+.box-bk {
+  margin-top: 3rem;
+  width: 350px;
+  height: 450px;
+  background: #f4f4f4;
 }
 .view-btn {
   display: inline-block;
@@ -224,10 +220,9 @@ a {
   background: #333;
   color: #fff;
   margin-top: 1rem;
-  border-radius: 10px;
 }
 .view-btn:hover {
-  background: rgb(161, 155, 155);
+  background: black;
   color: #fff;
 }
 
@@ -262,7 +257,6 @@ a {
   padding: 1rem;
   margin-bottom: 1rem;
   border: none;
-  border-radius: 5px;
 }
 #contact .contact-forms input:focus , textarea:focus {
   outline: none;
@@ -274,14 +268,25 @@ a {
   display: inline-block;
   border: none;
   padding: 1rem 1.5rem;
-  border-radius: 5px;
   text-align: right;
+  background: black;
+  color: #fff;
 }
-
+#contact .contact-forms button:hover {
+  background: #fff;
+  color: black;
+}
+.btn-left {
+  text-align: right;
+  margin-right: 4.4rem;
+}
+/* #contact .container {
+  padding: 2rem;
+} */
 /* Footer */
 #footer {
-  background: yellow;
-  box-shadow: 11px 11px 44px 0px rgb(226 231 6);
+  background: black;
+  color: white;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -290,13 +295,28 @@ a {
 #footer ul{
   display: flex;
 }
-#footer ul li {
-  padding: 0.5rem 1rem;
+#footer ul li a{
+  color: white;
+  margin: 0.5rem 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px transparent solid;
+  transition: border-color 0.5s; 
 }
+#footer ul li a:hover {
+border-color: #fff;
+}
+
 #footer h2, ul {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 #footer i {
-  margin-bottom: 1rem;
+  color: white;
+  margin-bottom: 2rem;
   padding: 0 0.5rem;
+}
+#footer .logo{
+  color: white;
+}
+.foot {
+  color: #ccc;
 }

@@ -81,3 +81,16 @@
   width: 200px;
   height: 300px;
 }
+
+/* Contact me */
+#contact .contact-wrap {
+  grid-template-columns: none;
+}
+.contact-info li {
+  font-size: 16px;
+}
+
+/* Footer */
+#footer ul li {
+  padding: 0.5rem;
+}
