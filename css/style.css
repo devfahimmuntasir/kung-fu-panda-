@@ -105,6 +105,25 @@ a {
   background: yellow;
   color: #333;
 }
+#showcase .content-img {
+  transform: translateY(0);
+  position: relative;
+  animation: panda 2s infinite linear;
+}
+
+@keyframes panda {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(10px);
+
+  }
+  100%{
+    transform: translateY(0);
+
+  }
+}
 #showcase .content {
   display: flex;
   justify-content: space-around;
@@ -133,6 +152,13 @@ a {
 #about {
   background: #fff;
   /* background: rgb(110, 107, 107); */
+}
+#about svg {
+  position: relative;
+  bottom: -10px;
+}
+.about {
+  padding-top: 3rem;
 }
 #about .about {
   display: flex;
@@ -210,13 +236,13 @@ a {
   display: inline-block;
   border: none;
   padding: 0.75rem 1rem;
-  background: #333;
+  background: black;
   color: #fff;
   margin-top: 1rem;
 }
 .view-btn:hover {
-  background: black;
-  color: #fff;
+  background: #fff;
+  color: black;
 }
 
 /* Contact Forms */
