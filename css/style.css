@@ -74,7 +74,8 @@ a {
 .p-1 {padding: 1.5rem;}
 .p-2 {padding: 2rem;}
 .p-3 {padding: 3rem;}
-.px-3 {padding: 4rem 0;}
+.px-3 {padding: 3rem 0;}
+.px-4 { padding-bottom: 3rem;}
 
 /* Navbar */
 #navbar {

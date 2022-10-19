@@ -7,13 +7,16 @@
 }
 #navbar .nav ul li a {
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 /* Showcase */
 #showcase .content {
   flex-direction: column-reverse;
   align-items: center;
-  padding-top: 0.1px;
+  padding-top: 1rem 0;
+}
+#showcase .content {
+  padding-top: 1rem;
 }
 .heading {
   font-size: 3rem;
@@ -54,6 +57,7 @@
 /* My Skills */
 #skills {
   max-height: 100%;
+  padding-top: 2rem;
 }
 #skills .skills-list {
   flex-direction: column;
