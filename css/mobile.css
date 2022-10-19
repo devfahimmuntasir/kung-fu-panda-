@@ -12,6 +12,8 @@
 /* Showcase */
 #showcase .content {
   flex-direction: column-reverse;
+  align-items: center;
+  padding-top: 0.1px;
 }
 .heading {
   font-size: 3rem;
@@ -38,59 +40,78 @@
   width: 300px;
   margin-top: 3rem;
 }
-
+.s-heading {
+  text-align: center;
+}
+#about .about ul li {
+  text-align: left;
+}
+#about .about .about-text {
+  padding: 0;
+  border-right: 0;
+  box-shadow: none;
+}
 /* My Skills */
+#skills {
+  max-height: 100%;
+}
 #skills .skills-list {
   flex-direction: column;
+  justify-content: baseline;
   align-items: baseline;
 }
-.box {
-  margin-bottom: 2rem;
-}
 #skills h2 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
 }
-#skills .skills-list {
-  margin-top: 0rem;
-  text-align: center;
+.box {
+  display: flex;
+  padding: 0.2rem;
   align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: none;
 }
-.s-heading {
-  font-size: 2rem;
+.box img {
+  width: 150px;
 }
-/* My Works */
+.box h3 {
+  font-size: 1rem;
+  text-align: left;
+}
+.box p {
+  font-size: 16px;
+  padding-bottom: 1px;
+  text-align: left;
+  padding: 0rem;
+}
+/* My works */
 #works .website {
   flex-direction: column;
 }
-
-.web img {
-  width: 199px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-#works .website {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  /* height: 60vh; */
-}
-.box-y {
-  width: 200px;
-  height: 300px;
-}
-
-/* Contact me */
+/* contact form */
 #contact .contact-wrap {
   grid-template-columns: none;
 }
+#contact .contact-forms input , textarea{
+  width: 100%;
+}
+.btn-left {
+  text-align: left;
+}
 .contact-info li {
+  padding-bottom: 10px;
+  margin-left: 0.5rem;
   font-size: 16px;
+  text-decoration-line: center;
 }
 
 /* Footer */
-#footer ul li {
+.logo {
+  padding-bottom: 0.5rem;
+}
+#footer .nav {
+  flex-direction: column;
+}
+#footer ul li a {
+  margin: 0;
   padding: 0.5rem;
 }
