@@ -25,11 +25,13 @@ a {
 .logo {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 2rem;
+  padding: 0 2rem;
   color: #1E0235;
 }
 .heading {
   font-size: 5rem;
-  line-height: 1.2;
+  line-height: 1.1;
+  margin-bottom: 2rem;
 }
 .s-heading {
   font-size: 3rem;
@@ -51,7 +53,7 @@ a {
   margin-top: 2rem;
   margin-right: 1rem;
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 2rem;
   border: 3px #333 solid;
   transition: all 0.5s ease-in;
 }
@@ -75,7 +77,6 @@ a {
 .p-2 {padding: 2rem;}
 .p-3 {padding: 3rem;}
 .px-3 {padding: 3rem 0;}
-.px-4 { padding-bottom: 3rem;}
 
 /* Navbar */
 #navbar {
@@ -84,15 +85,15 @@ a {
 #navbar .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 2rem;
 }
 #navbar .nav ul {
   display: flex;
 }
 #navbar .nav ul li a {
   color: #333;
-  margin: 0 1rem;
-  padding: 0.25rem;
+  margin: 0.5rem 1rem;
+  padding-bottom: 0.5rem;
   font-size: 18px;
   border-bottom: 3px transparent solid;
   transition: border-color 0.5s; 
@@ -109,7 +110,7 @@ a {
 #showcase .content-img {
   transform: translateY(0);
   position: relative;
-  animation: panda 2s infinite linear;
+  animation: panda 3s infinite linear;
 }
 
 @keyframes panda {
@@ -117,7 +118,7 @@ a {
     transform: translateY(0);
   }
   50%{
-    transform: translateY(10px);
+    transform: translateY(20px);
 
   }
   100%{
@@ -126,13 +127,20 @@ a {
   }
 }
 #showcase .content {
+  /* display: grid;
+  grid-template-columns: repeat(2,1fr); */
   display: flex;
   justify-content: space-around;
-  padding-top: 6rem;
+  grid-gap: 1rem;
+  height: 90vh;
+  align-items: center;
+  align-self: center;
 }
 #showcase .content-text {
   justify-content: center;
+  max-width: 450px;
   align-self: center;
+  /* margin-left: 5rem; */
 }
 #showcase .content-text ul {
   display: flex;
@@ -141,10 +149,12 @@ a {
 }
 #showcase .content-text ul li {
   margin-right: 1rem;
+  transition: 0.3s;
+  transform: scale(1);
 }
-/* #showcase .content-text ul li i:hover {
-  font-size: 3rem;
-} */
+#showcase .content-text ul li:hover {
+  transform: scale(1.1);
+}
 #showcase .content-img img {
   width: 550px;
 }
@@ -152,19 +162,20 @@ a {
 /* About */
 #about {
   background: #fff;
-  /* background: rgb(110, 107, 107); */
 }
 #about svg {
   position: relative;
-  bottom: -10px;
+  bottom: -10vw;
 }
 .about {
-  padding-top: 3rem;
+   margin-top: 11rem;
+}
+.about .about-img {
+  margin-right: 5rem;
 }
 #about .about {
   display: flex;
   grid-gap: 2rem;
-  align-items: center;
   justify-content: space-around;
 }
 #about .about ul li {
@@ -173,25 +184,32 @@ a {
 }
 #about .about .about-text  {
   padding: 3rem 4rem;
-  border-radius: 10px;
   background: #fff;
-  box-shadow: 10px 10px #444 ;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px 5px rgba(0,0,0,0.8);
+  /* box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.8) inset; */
+  /* box-shadow: inset 2px 2px 5px #444, inset -2px -2px 5px #444; */
+  /* box-shadow: 4px 4px 6px #333, -5px -5px 7px #333; */
 }
 
 /* Skills */
 #skills {
   background: yellow;
 }
+#skills .container {
+  padding: 10rem 0;
+}
 #skills h2 {
   font-size: 3rem;
   text-align: center;
-  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 #skills .skills-list {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  grid-gap: 5rem;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .box {
   box-shadow: 11px 11px 44px 0px rgb(226 231 6);
@@ -201,8 +219,7 @@ a {
 }
 .box p {
   font-size: 16px;
-  padding-bottom: 1rem;
-  padding: 2rem;
+  padding-bottom: 2rem;
 }
 .box img {
   max-width: 300px;
@@ -211,6 +228,9 @@ a {
 /* Works */
 #works {
   background: black;
+}
+#works .container {
+  padding: 8rem 0;
 }
 .web img {
   max-width: 300px;
@@ -240,6 +260,7 @@ a {
   background: black;
   color: #fff;
   margin-top: 1rem;
+  transition: all 0.5s ease-in-out;
 }
 .view-btn:hover {
   background: #fff;
@@ -250,6 +271,9 @@ a {
 #contact {
   background: yellow;
   place-items: center;
+}
+#contact .container {
+  padding: 5rem 0;
 }
 .contact-heading {
   font-size: 3rem;
@@ -277,10 +301,23 @@ a {
   padding: 1rem;
   margin-bottom: 1rem;
   border: none;
-}
-#contact .contact-forms input:focus , textarea:focus {
   outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
 }
+#contact .contact-forms textarea {
+  max-width: 100%;
+  height: 300px;
+}
+/* #contact .contact-forms input , textarea::placeholder {
+  color: #fff;
+} */
+/* #contact .contact-forms input:focus , textarea:focus {
+  background: white;
+  color: black;
+} */
 
 #contact .contact-forms button {
   margin-top: 1rem;
@@ -291,6 +328,8 @@ a {
   text-align: right;
   background: black;
   color: #fff;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
 }
 #contact .contact-forms button:hover {
   background: #fff;

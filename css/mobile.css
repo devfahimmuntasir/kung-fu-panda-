@@ -1,19 +1,30 @@
 /* Navbar */
+#navbar {
+  padding: 0;
+}
+#navbar .nav {
+  padding-top: 1rem;
+}
+#navbar .nav ul {
+  text-align: center;
+  justify-content: center;
+}
 .logo {
-  padding-bottom: 0.5rem;
+  padding-bottom:0;
 }
 #navbar .nav {
   flex-direction: column;
+  text-align: center;
 }
 #navbar .nav ul li a {
   margin: 0;
-  padding: 0.3rem;
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 /* Showcase */
 #showcase .content {
-  flex-direction: column-reverse;
-  align-items: center;
-  padding-top: 1rem 0;
+  flex-direction: column;
+  height: unset;
 }
 #showcase .content {
   padding-top: 1rem;
@@ -27,27 +38,32 @@
 }
 .content-text {
   text-align: center;
+  order: 2;
 }
 .content-text ul {
   justify-content: center;
 }
 #showcase .content-img img {
   width: 300px;
+  order: 1;
 }
 
 /* About */
 #about .about {
   flex-direction: column;
 }
+.about {
+  margin-top: 4rem;
+}
 .about-img img {
   width: 300px;
-  margin-top: 3rem;
 }
 .s-heading {
   text-align: center;
 }
 #about .about ul li {
   text-align: left;
+  list-style: none;
 }
 #about .about .about-text {
   padding: 0;
@@ -55,14 +71,14 @@
   box-shadow: none;
 }
 /* My Skills */
-#skills {
-  max-height: 100%;
-  padding-top: 2rem;
+#skills .container {
+  padding: 4rem 0;
 }
 #skills .skills-list {
   flex-direction: column;
   justify-content: baseline;
   align-items: baseline;
+  grid-gap: 1rem;
 }
 #skills h2 {
   padding-top: 1rem;
@@ -92,6 +108,9 @@
   flex-direction: column;
 }
 /* contact form */
+#works .container {
+  padding: 4rem 0;
+}
 #contact .contact-wrap {
   grid-template-columns: none;
 }
@@ -106,6 +125,10 @@
   margin-left: 0.5rem;
   font-size: 16px;
   text-decoration-line: center;
+}
+.icone {
+  padding-right: 1px;
+  min-width: 4px;
 }
 
 /* Footer */
