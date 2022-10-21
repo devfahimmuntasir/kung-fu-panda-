@@ -43,7 +43,17 @@
   font-size: 1rem;
 }
 .box img {
-  width: 250px;
+  max-width: 200px;
+}
+#skills .skills-list {
+  grid-gap: 3rem;
 }
 
 /* Works */
+.web img {
+  max-width: 200px;
+}
+.box-y {
+  max-width: 200px;
+  min-height: 400px;
+}
